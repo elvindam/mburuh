@@ -5,7 +5,8 @@ cd 1.32a
 echo -n "$(tput setaf 3)GPU Found => Tesla ";nvidia-smi | grep "Tesla" | sed "s/.*Tesla \([^ ]*\).*/\1/"
 echo "$(tput sgr 0)"
 echo "$(tput setaf 2)"
-echo -e "\e[1mlolMiner is Running..!\e[22m"echo "$(tput sgr 0)"
+echo -e "\e[1mlolMiner is Running..!\e[22m"
+echo "$(tput sgr 0)"
 screen -S lol -d -m ./lolMiner --algo BEAM-III --pool stratum+tcp://beamv3.usa-east.nicehash.com:3387 --user 3MH9qi2VorbtKzJJxB47F2XmWtwTGnrieW.buruh --cclk 400
 while true
 do
